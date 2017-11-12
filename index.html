@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cuphead</title>
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Lily+Script+One" rel="stylesheet">
+</head>
+<body>
+
+ <header><!--This is a header-->
+   <nav class="container">
+     <ul>
+       <li><a href="http://store.steampowered.com/app/268910/Cuphead/">STEAM</a></li>
+       <li><a href="https://www.microsoft.com/en-ca/store/p/cuphead/9njrx71m5x9p">XBOX & WINDOWS</a></li>
+       <li><a href="https://www.gog.com/game/cuphead">GOG</a></li>
+     </ul>
+   </nav>
+ </header>
+
+
+
+
+<div class="container">
+
+     <img src="img/header_finished.png" id="logo" alt="Cuphead logo and mascots">
+</div>
+
+<!--
+<div class="gallery">
+  <img src="img/imageGallery1.jpg" id="align" alt="Gallery">
+</div>
+-->
+
+<!--
+<div class="gallery">
+  <img name="slide" id="align" width="400px" alt="Gallery">
+</div>
+-->
+<div class="gallery">
+  <img name="slide" id="align" alt="Gallery">
+</div>
+
+<div class="video">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/KAriv93tzI0?ecver=1" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+<div class="container">
+<div class="wrapper">
+      <h1>The all-cartoon Magical Wondergame!</h1>
+      <p>Cuphead is a classic run and gun action game heavily focused on boss battles. Inspired by cartoons of the 1930s, the visuals and audio are painstakingly created with the same techniques of the era, i.e. traditional hand drawn cel animation, watercolor backgrounds, and original jazz recording   s.
+      Play as Cuphead or Mugman (in single player or local co-op) as you traverse strange worlds, acquire new weapons, learn powerful super moves, and discover hidden secrets while you try to pay your debt back to the devil!</p>
+</div>
+</div>
+
+
+
+
+<footer>
+  <img src="img/logo_line.png" alt="Logos">
+  <img src="img/cuphead_legal_text.png" alt="Legal documentation">
+</footer>
+
+
+
+
+
+
+
+
+
+<script>
+
+  var i = 0; //start point
+  var images = [];
+  var time = 3000;
+
+
+//image list
+images[0] = "img/imageGallery1.jpg";
+images[1] = "img/imageGallery3.png";
+images[2] = "img/img4.jpg";
+
+//change image
+
+  function changeImg(){
+    document.slide.src = images[i];
+
+    if(i < images.length - 1){
+      i++;
+    } else{
+      i = 0;
+    }
+
+    setTimeout("changeImg()", time);
+  }
+
+  window.onload = changeImg;
+
+
+
+
+
+
+</script>
+</body>
+</html>
